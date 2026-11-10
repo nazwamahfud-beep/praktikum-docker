@@ -1,0 +1,51 @@
+1  cat /etc/os-release
+    2  docker version~
+    3  docker pull ubuntu:24.04
+    4  docker run -it --name ubuntu-lab ubuntu:24.04 bash
+    5  docker ps -a
+    6  docker pull nginx:alpine
+    7  docker --version
+    8  apt update
+    9  docker run hello-world
+   10  cat /etc/os-release | head -2
+   11  docker run hello-world
+   12  docker images
+   13  docker ps
+   14  cat /etc/os-release | head -2
+   15  uname -r
+   16  docker run -it --rm alpine sh
+   17  docker run -d --name web-alpine -p 8081:80 nginx:alpine
+   18  docker run -d --name web-lama -p 8082:80 nginx:1.26
+   19  docker ps
+   20  docker images
+   21  curl -sI localhost:8081 | grep Server
+   22  curl -sI localhost:8082 | grep Server
+   23  history > /root/riwayat.txt
+   24  cat /root/riwayat.txt
+   25  docker ps -a
+   26  docker images
+   27  docker pull nginx
+   28  docker images~
+   29  docker pull nginx
+   30  docker images
+   31  docker exec web-lama sh -c 'echo "Praktikum Cloud Computing - NIM 24231005" > /usr/share/nginx/html/index.html'
+   32  curl http://localhost:8082
+   33  docker stop web-lama
+   34  docker ps -a
+   35  docker start web-lama
+   36  curl http://localhost:8082
+   37  history > hasil.txt
+===== DOCKER PS -A =====
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS                      PORTS                                     NAMES
+a5e239ed1cb3   nginx:1.26     "/docker-entrypoint.…"   22 minutes ago   Up 9 minutes                0.0.0.0:8082->80/tcp, [::]:8082->80/tcp   web-lama
+070fc82e80ec   nginx:alpine   "/docker-entrypoint.…"   22 minutes ago   Up 22 minutes               0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   web-alpine
+4dd7bf4871bc   hello-world    "/hello"                 25 minutes ago   Exited (0) 25 minutes ago                                             practical_williamson
+1e547b33c0b0   ubuntu:24.04   "bash"                   30 minutes ago   Exited (0) 29 minutes ago                                             ubuntu-lab
+===== DOCKER IMAGES =====
+IMAGE                ID             DISK USAGE   CONTENT SIZE   EXTRA
+alpine:latest        3ea06e4cb95e       8.43MB             0B        
+hello-world:latest   e2ac70e7319a       10.1kB             0B   U    
+nginx:1.26           64e5ac93d424        192MB             0B   U    
+nginx:alpine         7cac34a4d72b         63MB             0B   U    
+nginx:latest         c05939e13a61        163MB             0B        
+ubuntu:24.04         d9b8c34d61a9       78.2MB             0B   U    
