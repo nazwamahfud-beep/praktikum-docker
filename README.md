@@ -113,8 +113,7 @@ Hasil pengujian menampilkan tulisan:
 Folder website pada image resmi Nginx adalah `/usr/share/nginx/html`.
 
 ### Screenshot Pengujian Nginx
-
-[Masukkan screenshot halaman Nginx melalui Traffic / Ports dengan port 8080. Pastikan URL dan NIM terlihat.]
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b0dde8d4-4eb2-4450-a6ee-b589371df91e" />
 
 ## 5. Melihat Log dan Penggunaan Sumber Daya Container
 
